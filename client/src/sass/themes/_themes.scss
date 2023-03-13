@@ -1,0 +1,18 @@
+$themes: (
+  light: (
+    background-color-1: $light-theme-background-color-1,
+    background-color-2: $light-theme-background-color-2,
+    font-color-1: $light-theme-font-color-1,
+    font-color-2: $light-theme-font-color-2,
+    font-color-3: $light-theme-font-color-3,
+    accent-color-1: $light-theme-accent-color-1,
+  ),
+  dark: (
+    background-color-1: $dark-theme-background-color-1,
+    background-color-2: $dark-theme-background-color-2,
+    font-color-1: $dark-theme-font-color-1,
+    font-color-2: $dark-theme-font-color-2,
+    font-color-3: $dark-theme-font-color-3,
+    accent-color-1: $dark-theme-accent-color-1,
+  ),
+);

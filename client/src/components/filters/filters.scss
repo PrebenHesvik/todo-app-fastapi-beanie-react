@@ -1,0 +1,73 @@
+@import '../../sass/styles.scss';
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 $base-spacing;
+  border-bottom-left-radius: $base-border-radius;
+  border-bottom-right-radius: $base-border-radius;
+  font-size: 12px;
+  @include themify($themes) {
+    background-color: themed('background-color-1');
+    color: themed('font-color-3');
+  }
+}
+
+.filters__counter-div {
+  width: 15%;
+
+  .filters__counter-text {
+    font-size: inherit;
+    @include themify($themes) {
+      color: themed('font-color-2');
+    }
+  }
+}
+
+.filters__filters-div {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+  .filters__filters-selector {
+    margin: 10px;
+    font-size: inherit;
+    cursor: pointer;
+    @include themify($themes) {
+      color: themed('font-color-2');
+    }
+
+    &:hover {
+      @include themify($themes) {
+        color: themed('font-color-1');
+      }
+      font-weight: 600;
+    }
+  }
+
+  .active {
+    font-weight: 600;
+    @include themify($themes) {
+      color: themed('accent-color-1');
+    }
+  }
+}
+
+.filters__clear-completed-div {
+  width: 25%;
+  text-align: end;
+  font-size: inherit;
+  cursor: pointer;
+  @include themify($themes) {
+    color: themed('font-color-2');
+  }
+
+  &:hover {
+    font-weight: 600;
+    @include themify($themes) {
+      color: themed('font-color-1');
+    }
+  }
+}

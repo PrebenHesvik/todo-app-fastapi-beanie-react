@@ -1,0 +1,36 @@
+@import '../../sass/styles.scss';
+
+.todo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 $base-spacing 0 $md-spacing;
+  border-bottom: 1px solid lightgray;
+  @include themify($themes) {
+    background-color: themed('background-color-1');
+    color: themed('font-color-1');
+  }
+
+  &:first-child {
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+  }
+
+  .todo__is-completed-div {
+    width: 50px;
+
+    .todo__is-completed-checkbox {
+      border-radius: 50%;
+    }
+  }
+
+  .todo__text-div {
+    flex-grow: 1;
+  }
+
+  .todo__delete-todo-div {
+    width: 25px;
+    cursor: pointer;
+    color: rgba(117, 12, 12, 0.5);
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../sass/styles.scss';
+
+#todo-input {
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: $base-border-radius;
+  margin-bottom: $md-spacing;
+  padding: 0 25px 0 calc(50px + $md-spacing);
+  font-size: 18px;
+  @include themify($themes) {
+    background-color: themed('background-color-1');
+    color: themed('font-color-2');
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

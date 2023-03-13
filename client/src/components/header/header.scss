@@ -1,0 +1,24 @@
+@import '../../sass/styles.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $lg-spacing;
+  background-color: inherit;
+
+  .header__title {
+    letter-spacing: 7px;
+    font-size: 32px;
+    font-weight: 400;
+    @include themify($themes) {
+      color: themed('font-color-3');
+    }
+  }
+
+  .header__theme-toggle {
+    cursor: pointer;
+    @include themify($themes) {
+      color: themed('font-color-3');
+    }
+  }
+}

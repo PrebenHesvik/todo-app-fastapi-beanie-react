@@ -1,0 +1,13 @@
+.hero {
+  height: 350px;
+  background: url('../../assets/mountain_range.jpg');
+  background-color: rgb(107, 107, 199);
+  background-image: linear-gradient(
+      to right,
+      rgba(89, 0, 255, 0.3),
+      rgba(0, 0, 255, 0.3)
+    ),
+    url('../../assets/mountain_range.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,13 @@
+$z-index-list: ('base', 'header', 'modal', 'tooltip');
+
+@mixin z-index($layer) {
+  // we're adding 1 so the first layer starts at 2,
+  // one above the "standard" z-index of 1.
+  // SCSS array indizes start at 1
+  z-index: #{index($z-index-list, $layer) + 1};
+}
+
+// // usage
+// .c-modal {
+//   @include z-index('modal');
+// }

@@ -1,0 +1,14 @@
+@import './sass/styles.scss';
+
+.app {
+  height: 100vh;
+  @include themify($themes) {
+    background-color: themed('background-color-2');
+  }
+}
+
+.app-content-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}

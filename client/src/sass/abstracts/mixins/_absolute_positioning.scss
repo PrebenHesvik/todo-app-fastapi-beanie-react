@@ -1,0 +1,25 @@
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin position($position, $box-edge-values) {
+  position: $position;
+  $box-edge-values: unpack-shorthand($box-edge-values);
+  top: nth($box-edge-values, 1);
+  right: nth($box-edge-values, 2);
+  bottom: nth($box-edge-values, 3);
+  left: nth($box-edge-values, 4);
+}
+
+/// USAGE
+/// .c-stickyHeader {
+///   @include position(fixed, 0 0 auto 0);
+/// }
+
+/// .c-modal {
+///   @include position(absolute, 20%); // 20% distance to each side
+/// }
